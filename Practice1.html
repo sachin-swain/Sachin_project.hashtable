@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/etk3jjy.css">
     <style>
         .google{
-            background-color: bisque;
-            font-family: "aboreto", sans-serif;
+            background-color: rgb(240, 232, 222);
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
             font-weight: 700;
             font-style: normal;
             text-align: center;
@@ -17,30 +17,41 @@
             border-width: 2px;
             border-radius: 5px;*/
             /* border-bottom: solid rgb(24, 97, 79) 5px; */
-            border:solid black 5px ;border-radius: 8px;
+            border:solid black 2px ;border-radius: 8px;
             width:400px;
-        } 
-        p{
-            background-color: rgba(108, 187, 187, 0.555);
-            color: firebrick;
-            font-family:cursive;
-            /* border:dashed, brown,2px;
-            border-top-right-radius: 50px; */ border:solid black 5px ;
-            border-radius: 8px;width: 400px;
-        }
-        .container{
-           background-color: bisque;border: 5px solid black;
-            margin: 2px;padding: 2px;
-            display: flex;height: 500px;
-            justify-content: space-between;
-            /* flex-wrap: wrap; */
-            /* by default flex direction is side wise or row ///// flex direction used to change direction collumn,row reverse ,etc */
             
+        }
+        /* float  */
+        .sachin{ overflow: auto;
+           #img1{
+            float: left;
+            height: 150px;
+           }
+            #img2{
+            float: right;
+            height: 150px;
+           }#img3{
+            float: right;
+            height: 150px;
+           }
+            #img4{
+            float: right;
+            height: 150px;clear: right;
+           }
+        } 
+        /* flexbox  */
+        .container{
+           background-color: bisque;border: 5px solid black; margin: 2px;padding: 2px;
+           height: 500px;
+            display: flex;flex-wrap: wrap;
+            justify-content: center;align-items: center;align-content: center;
+            /* by default flex direction is side wise or row ///// flex direction used to change direction collumn,row reverse ,etc */
+            /* by default line item are stretch  */
         }
         .box{
             height: 200px;
             width: 200px;
-           border: 2px solid brown;
+           border: 2px solid rgb(0, 0, 0);
             margin: 2px;padding: 2px;
         }
         #box1{
@@ -55,10 +66,17 @@
         #box4{
             background-color: rgb(60, 0, 255);
         }
+        /* p{
+            background-color: rgba(108, 187, 187, 0.555);
+            color: firebrick;
+            /* border:dashed, brown,2px;
+            border-top-right-radius: 50px; */ border:solid black 5px ;
+            border-radius: 8px;width: 400px;
+        } */
     </style>
 </head>
 <body> 
-    <h1 class="google">hii learning css vvv</h1>
+    <h1 class="google">6 Hour Crash Course</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quidem quo ex quisquam illo, impedit incidunt. Minus ipsa reiciendis beatae mollitia error possimus rem et, sequi non? Veniam blanditiis sunt est minus dolores, quaerat tenetur vel placeat, quidem asperiores neque. Beatae voluptate aspernatur quia. Ullam quibusdam ducimus quos voluptate necessitatibus mollitia, iusto architecto, blanditiis, fuga praesentium enim ipsum! Ex optio veniam maiores officiis tempora suscipit delectus provident, repudiandae eveniet beatae.</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, numquam aliquam. Id officiis enim praesentium architecto sint maiores rerum molestias autem. Aspernatur amet deleniti sequi at quas modi delectus cumque nisi hic, quam ipsum excepturi dignissimos beatae corrupti, eaque nobis!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum similique dolor esse beatae consequatur dolore. Placeat perferendis, officia, suscipit minima facere dolorem temporibus numquam, in repellat ullam perspiciatis quae ipsa aperiam. Nostrum amet nihil iure aut numquam eligendi dolorem nulla repellat porro nam optio sunt reiciendis soluta, accusamus corrupti quod dicta suscipit culpa.</p>
@@ -68,5 +86,20 @@
         <div class="box" id="box3"></div>
         <div class="box" id="box4"></div>
     </div>
+    <!-- #float vs clear keyword  and overflow-->
+    <div class="sachin">
+        <img id="img1" src="https://upload.wikimedia.org/wikipedia/en/5/5c/Indira_Gandhi_Institute_of_Technology%2C_Sarang_Logo.png" alt="................">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem id quasi dolorem necessitatibus vero aliquam cupiditate temporibus, nesciunt laudantium dolores? At, quas ab facere fuga necessitatibus debitis beatae. Unde est laboriosam delectus explicabo quod commodi suscipit doloremque blanditiis dolores consequuntur, ratione maxime maiores, numquam sit quas in adipisci dolore ea perspiciatis. Nihil consequatur eveniet illo nulla expedita ab explicabo voluptates. Architecto labore aut sit et odit temporibus provident esse iusto maxime pariatur eaque laudantium, cum ducimus quia perferendis ad voluptatibus fugiat distinctio quasi corrupti? Labore molestias tempore doloremque itaque earum, necessitatibus cumque, qui aliquid iste ad repellendus ex exercitationem assumenda? Explicabo cupiditate rerum sed, vel eaque possimus nemo iure aliquam dignissimos mollitia amet dolorem magnam voluptatum aperiam placeat doloribus commodi velit beatae tempore vitae quos cum. Distinctio quaerat saepe dolorem accusantium quam sequi corporis quos ad corrupti, repellat nihil ex nulla fugit quas, commodi veniam. Doloribus incidunt consequuntur iure harum odit explicabo facere eos sequi unde temporibus dolorum animi perspiciatis, quisquam inventore quasi aliquam cupiditate! Quibusdam nemo ea aspernatur facilis laborum harum sed incidunt accusamus nesciunt veniam error eum ratione quod, sapiente commodi dolorum. Neque tenetur excepturi repellat quo atque fuga, aut reprehenderit facere labore reiciendis ipsa eum, harum, delectus laborum distinctio debitis? Ipsam suscipit atque quam porro natus dignissimos omnis, accusamus aut cupiditate necessitatibus eius corporis. Earum sed dolor, optio quaerat eius culpa tempore repellendus hic consequuntur officiis incidunt quidem eligendi placeat. Non, recusandae nihil adipisci illo deserunt ullam sapiente ratione perspiciatis similique nam expedita, laboriosam officia, aperiam magnam?</p>
+        <img id="img2" src="https://upload.wikimedia.org/wikipedia/en/5/5c/Indira_Gandhi_Institute_of_Technology%2C_Sarang_Logo.png" alt="................">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem id quasi dolorem necessitatibus vero aliquam cupiditate temporibus, nesciunt laudantium dolores? At, quas ab facere fuga necessitatibus debitis beatae. Unde est laboriosam delectus explicabo quod commodi suscipit doloremque blanditiis dolores consequuntur, ratione maxime maiores, numquam sit quas in adipisci dolore ea perspiciatis. Nihil consequatur eveniet illo nulla expedita ab explicabo voluptates. Architecto labore aut sit et odit temporibus provident esse iusto maxime pariatur eaque laudantium, cum ducimus quia perferendis ad voluptatibus fugiat distinctio quasi corrupti? Labore molestias tempore doloremque itaque earum, necessitatibus cumque, qui aliquid iste ad repellendus ex exercitationem assumenda? Explicabo cupiditate rerum sed, vel eaque possimus nemo iure aliquam dignissimos mollitia amet dolorem magnam voluptatum aperiam placeat doloribus commodi velit beatae tempore vitae quos cum. Distinctio quaerat saepe dolorem accusantium quam sequi corporis quos ad corrupti, repellat nihil ex nulla fugit quas, commodi veniam. Doloribus incidunt consequuntur iure harum odit explicabo facere eos sequi unde temporibus dolorum animi perspiciatis, quisquam inventore quasi aliquam cupiditate! Quibusdam nemo ea aspernatur facilis laborum harum sed incidunt accusamus nesciunt veniam error eum ratione quod, sapiente commodi dolorum. Neque tenetur excepturi repellat quo atque fuga, aut reprehenderit facere labore reiciendis ipsa eum, harum, delectus laborum distinctio debitis? Ipsam suscipit atque quam porro natus dignissimos omnis, accusamus aut cupiditate necessitatibus eius corporis. Earum sed dolor, optio quaerat eius culpa tempore repellendus hic consequuntur officiis incidunt quidem eligendi placeat. Non, recusandae nihil adipisci illo deserunt ullam sapiente ratione perspiciatis similique nam expedita, laboriosam officia, aperiam magnam?</p>
+        <img id="img3" src="https://upload.wikimedia.org/wikipedia/en/5/5c/Indira_Gandhi_Institute_of_Technology%2C_Sarang_Logo.png" alt="................">
+        <img id="img4" src="https://upload.wikimedia.org/wikipedia/en/5/5c/Indira_Gandhi_Institute_of_Technology%2C_Sarang_Logo.png" alt="................">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem id quasi dolorem necessitatibus vero aliquam cupiditate temporibus, nesciunt laudantium dolores? At, quas ab facere fuga necessitatibus debitis beatae. Unde est laboriosam delectus explicabo quod commodi suscipit doloremque blanditiis dolores consequuntur, ratione maxime maiores, numquam sit quas in adipisci dolore ea perspiciatis. Nihil consequatur eveniet illo nulla expedita ab explicabo voluptates. Architecto labore aut sit et odit temporibus provident esse iusto maxime pariatur eaque laudantium, cum ducimus quia perferendis ad voluptatibus fugiat distinctio quasi corrupti? Labore molestias tempore doloremque itaque earum, necessitatibus cumque, qui aliquid iste ad repellendus ex exercitationem assumenda? Explicabo cupiditate rerum sed, vel eaque possimus nemo iure aliquam dignissimos mollitia amet dolorem magnam voluptatum aperiam placeat doloribus commodi velit beatae tempore vitae quos cum. Distinctio quaerat saepe dolorem accusantium quam sequi corporis quos ad corrupti, repellat nihil ex nulla fugit quas, commodi veniam. Doloribus incidunt consequuntur iure harum odit explicabo facere eos sequi unde temporibus dolorum animi perspiciatis, quisquam inventore quasi aliquam cupiditate! Quibusdam nemo ea aspernatur facilis laborum harum sed incidunt accusamus nesciunt veniam error eum ratione quod, sapiente commodi dolorum. Neque tenetur excepturi repellat quo atque fuga, aut reprehenderit facere labore reiciendis ipsa eum, harum, delectus laborum distinctio debitis? Ipsam suscipit atque quam porro natus dignissimos omnis, accusamus aut cupiditate necessitatibus eius corporis. Earum sed dolor, optio quaerat eius culpa tempore repellendus hic consequuntur officiis incidunt quidem eligendi placeat. Non, recusandae nihil adipisci illo deserunt ullam sapiente ratione perspiciatis similique nam expedita, laboriosam officia, aperiam magnam?</p>
+        
+    </div>
+    <!-- flexbox -->
+     <div>
+
+     </div>
 </body>
 </html>
