@@ -43,8 +43,11 @@
         .container{
            background-color: bisque;border: 5px solid black; margin: 2px;padding: 2px;
            height: 500px;
-            display: flex;flex-wrap: wrap;
-            justify-content: center;align-items: center;align-content: center;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+            align-content: center;
             /* by default flex direction is side wise or row ///// flex direction used to change direction collumn,row reverse ,etc */
             /* by default line item are stretch  */
         }
@@ -55,7 +58,7 @@
             margin: 2px;padding: 2px;
         }
         #box1{
-            background-color: rgb(234, 2, 255);
+            background-color: rgb(234, 2, 255);flex-shrink: 4;
         }
         #box2{
             background-color: rgb(246, 12, 12);
@@ -73,6 +76,14 @@
             border-top-right-radius: 50px; */ border:solid black 5px ;
             border-radius: 8px;width: 400px;
         } */
+
+        /* media query  */
+        @media screen and (min-width: 180px) {
+             .box{
+              background-color: lightgreen;
+         }
+        }
+
     </style>
 </head>
 <body> 
@@ -96,10 +107,8 @@
         <img id="img4" src="https://upload.wikimedia.org/wikipedia/en/5/5c/Indira_Gandhi_Institute_of_Technology%2C_Sarang_Logo.png" alt="................">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem id quasi dolorem necessitatibus vero aliquam cupiditate temporibus, nesciunt laudantium dolores? At, quas ab facere fuga necessitatibus debitis beatae. Unde est laboriosam delectus explicabo quod commodi suscipit doloremque blanditiis dolores consequuntur, ratione maxime maiores, numquam sit quas in adipisci dolore ea perspiciatis. Nihil consequatur eveniet illo nulla expedita ab explicabo voluptates. Architecto labore aut sit et odit temporibus provident esse iusto maxime pariatur eaque laudantium, cum ducimus quia perferendis ad voluptatibus fugiat distinctio quasi corrupti? Labore molestias tempore doloremque itaque earum, necessitatibus cumque, qui aliquid iste ad repellendus ex exercitationem assumenda? Explicabo cupiditate rerum sed, vel eaque possimus nemo iure aliquam dignissimos mollitia amet dolorem magnam voluptatum aperiam placeat doloribus commodi velit beatae tempore vitae quos cum. Distinctio quaerat saepe dolorem accusantium quam sequi corporis quos ad corrupti, repellat nihil ex nulla fugit quas, commodi veniam. Doloribus incidunt consequuntur iure harum odit explicabo facere eos sequi unde temporibus dolorum animi perspiciatis, quisquam inventore quasi aliquam cupiditate! Quibusdam nemo ea aspernatur facilis laborum harum sed incidunt accusamus nesciunt veniam error eum ratione quod, sapiente commodi dolorum. Neque tenetur excepturi repellat quo atque fuga, aut reprehenderit facere labore reiciendis ipsa eum, harum, delectus laborum distinctio debitis? Ipsam suscipit atque quam porro natus dignissimos omnis, accusamus aut cupiditate necessitatibus eius corporis. Earum sed dolor, optio quaerat eius culpa tempore repellendus hic consequuntur officiis incidunt quidem eligendi placeat. Non, recusandae nihil adipisci illo deserunt ullam sapiente ratione perspiciatis similique nam expedita, laboriosam officia, aperiam magnam?</p>
         
-    </div>
-    <!-- flexbox -->
-     <div>
-
-     </div>
+    <!-- media query  -->
+    <div class="box" id="box1"></div>
+    
 </body>
 </html>
